@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <title>SCP:SL 城市化社区服务器</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./sidebar.js"></script>
+</head>
+<body>
+
+  <div id="background">
+    <a href="ph.html">查看图片</a>
+  </div>
+
+  <div id="module">
+    <p><b>首  页</b></p>
+  </div>
+  <button id="sidebar-toggle">☰</button>
+  <div id="sidebar" class="active">
+    <ul>
+        <li><a style="color: #f2ff7a;" href="首页.html">首页</a></li>
+        <li><a href="规则.html">规则</a></li>
+        <li><a href="插件.html">插件</a>
+        <li><a href="赞助.html">赞助</a>
+    </ul>
+    <div id="update-log">
+      <h2>最新更新</h2>
+      <ul>
+        <li><b>2024-06-21:</b> 网页优化更新 By Wujiyan</li>
+        <li><a style="color: black;" href="更新日志.html">更新日志</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h1 style="text-align: center;">欢迎来到 [联合B服] SCP：SL 城市化社区服务器</h1>
+      <p>  [联合A服]Shadow服务器：569888514 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=NrE7qKMceyJ3iVVHHjO-7nea8cxit_nv&jump_from=webapi&authKey=/bbpv4AnnTBXgfjjh2s6c38QJqEHL9SGjp4ojhNfrKzgoM8yzS/aLeFedY4ve/34">[联合A服]Shadow服务器</a></p>
+      <p>  [联合B服]城市化服务器：595156110 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=lfqQOo1ta2OrNdsOqsK79oGo-5JVkDok&jump_from=webapi&authKey=cJCQF5qGIIlvUEvGx8qzAUdZ2XwHBR7g/gyNpcnjjOvdkjFGUdOkARJbwKe3EFZe">[联合B服]SCPsl城市化服</a></p>
+      <p>  [联合C服]小天堂服务器：641420278 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=a89vnk_XSOBb8-lf1mbl3mftYfUyoGVY&jump_from=webapi&authKey=wZ2OsBDEQQLFz/H9kQwfm+1Hkmu9EzM0AGPARKe0ZlKtH4TtGgOPbzMLr3TwEdzF">[联合C服]小天堂服务器</a></p>
+      <h1>你想要了解什么？</h1>
+      <p><a href="赞助.html"><b>赞助？</a> <a href="插件.html" >插件？</a> <a href="规则.html">规则？</a> <a href="规则.html">管理员守则？</a> <a href="">举报？</a> <a href="" >评论?</a></b></p>
+    </div>
+
+  </div>
+
+  <div id="content">
+    
+    <p></p>
+    <h2>版权声明：</h2>
+    <br>
+    <p>本网站由 SCP:SL城市化社区 运营。以下条款适用于所有访问和使用本网站的用户。通过访问和使用本网站，您表示同意遵守以下条款。</p>
+    <p>1. 本网站内容（包括但不限于文字、图片、音频、视频等）均受中华人民共和国著作权法、商标法和相关法律法规的保护。未经 网站开发者 明确许可，不得以任何形式复制、传播、修改、展示或以其他方式使用本网站内容。</p>
+    <p>2. 本网站尊重用户隐私，不会泄露用户个人信息。用户在使用本网站过程中，需遵守相关法律法规，不得发布违法、违规内容。</p>
+    <p>3. 本网站部分内容来源于互联网，若侵犯了您的合法权益，请及时与我们联系，我们将尽快处理。</p>
+    <p>4. 本网站提供的链接可能指向其他网站，我们不对这些网站的内容负责，访问者自行承担风险。</p>
+    <p>5. 本版权声明及其修改权、更新权归 网站开发者 所有。</p>
+    <br>
+    <p>联系方式:</p>
+    <p>QQ邮箱:2083979708@qq.com</p>
+
+  </div>
+
+  <script>
+
+    var modal = document.getElementById("myModal");
+
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+    window.onload = function() {
+      modal.style.display = "block";
+    };
+
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    };
+
+ 
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+
+</body>
+</html>

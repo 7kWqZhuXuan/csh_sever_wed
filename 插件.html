@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <title>插件介绍</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        position: relative; /* 为固定定位的按钮设置相对定位的参照物 */
+        min-height: 100vh; /* 设置最小高度，确保内容足够长时按钮仍然在视窗内 */
+    }
+    .update-log {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .update-entry {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+    .update-title {
+        font-size: 24px;
+        color: #333;
+    }
+    .update-date {
+        font-size: 18px;
+        color: #666;
+    }
+    .update-content {
+        font-size: 16px;
+        color: #333;
+    }
+    .back-to-top {
+        position: fixed; /* 固定按钮位置 */
+        bottom: 20px; /* 距离底部20px */
+        right: 20px; /* 距离右边20px */
+        padding: 10px 15px; /* 内边距 */
+        background-color: #007bff; /* 背景颜色 */
+        color: white; /* 文字颜色 */
+        border: none; /* 无边框 */
+        border-radius: 5px; /* 圆角边框 */
+        cursor: pointer; /* 鼠标样式 */
+        display: none; /* 默认不显示 */
+    }
+    /* 当滚动到一定位置时显示按钮 */
+    body:hover .back-to-top {
+        display: block;
+    
+    }
+    .btn {
+        position: fixed; /* 固定按钮位置 */
+        bottom: 20px; /* 距离底部20px */
+        right: 20px; /* 距离右边20px */
+        background-color: #008CBA;
+        border: none;
+        color: white;
+        padding: 12px 24px;
+        text-align: center;
+        border-radius: 10px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        opacity: 0.85;
+    }
+</style>
+  <script src="./sidebar.js"></script>
+</head>
+<body>
+
+  <div id="background">
+    <a href="ph.html">查看图片</a>
+  </div>
+
+  <div id="module">
+    <p><b>插 件</b></p>
+  </div>
+
+  <button id="sidebar-toggle">☰</button>
+  <div id="sidebar" class="active">
+    <ul>
+        <li><a href="首页.html">首页</a></li>
+        <li><a href="规则.html">规则</a></li>
+        <li><a style="color: #f2ff7a;" href="插件.html">插件</a>
+        <li><a href="赞助.html">赞助</a>
+    </ul>
+    <div id="update-log">
+      <h2>最新更新</h2>
+      <ul>
+        <li><b>2024-06-21:</b> 网页优化更新 By Wujiyan</li>
+        <li><a style="color: black;" href="更新日志.html">更新日志</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="content">
+    <h1>插件介绍:</h1>
+    <h2>在游玩服务器中，插件提供了更高的可玩性和趣味性，本服同时也增加了几个本服特色插件</h2>
+    <div class="update-log">
+      <div class="update-entry">
+          <h2 class="update-title">SCP-181 "幸运儿"</h2>
+          <p class="update-date"><a href="https://scp-wiki-cn.wikidot.com/scp-181">S.C.P官方文档</a></p>
+          <ul class="update-content">
+              <li>【生成】固定每一回合生成</li>
+              <li>【角色】Class-D</li>
+              <li>【出生点】Class-D宿舍</li>
+              <li>【血量】125HP</li>
+              <li>【装备】科学家钥匙卡、急救包、硬币</li>
+              <li>【特殊机制】开门概率10%、免伤概率20%、伤害减免30%(不包括电炮、3X、囚鸟等)</li>
+          </ul>
+      </div>
+      <div class="update-entry">
+          <h2 class="update-title">SCP-703-J "随机物品生成器"</h2>
+          <p class="update-date"><a href="https://scp-wiki-cn.wikidot.com/scp-703">S.C.P官方文档</a></p>
+          <ul class="update-content">
+              <li>【生成】当有4位DD级人员时生成/优先级小于SCP-181</li>
+              <li>【角色】Class-D</li>
+              <li>【出生点】Class-D宿舍</li>
+              <li>【血量】120HP</li>
+              <li>【装备】无</li>
+              <li>【特殊机制】每隔3分钟刷新一个随机物品在背包中，开局15s后会刷新第一次随机物品，后，开始3分钟CD冷却</li>
+          </ul>
+      </div>
+      <div class="update-entry">
+          <h2 class="update-title">SCP-920 "迷路先生"</h2>
+          <p class="update-date"><a href="https://scp-wiki-cn.wikidot.com/scp-920">S.C.P官方文档</a></p>
+          <ul class="update-content">
+              <li>【生成】当有6位D级人员时生成，优先级小于SCP-720-J</li>
+              <li>【角色】Class-D</li>
+              <li>【出生点】Class-D宿舍</li>
+              <li>【血量】135HP</li>
+              <li>【装备】急救包</li>
+              <li>【特殊机制】按leftAlt键（左Alt键）可以开关传送功能，捡起物品有20%的概率成功传送到随机位置</li>
+              <li></li>
+          </ul>
+      </div>
+      <div class="update-entry">
+          <h2 class="update-title">设施主管</h2>
+          <p class="update-date">Site-02的最高领导人</p>
+          <ul class="update-content">
+                  <li>【生成】当一局内科学家数量大于4人时刷新</li>
+                  <li>【角色】科学家</li>
+                   <li>【出生点】办公区域/与设施警卫出生点重合</li>
+                  <li>【血量】100HP</li>
+                  <li>【装备】设施主管钥匙卡、COM18手枪、急救包、对讲机</li>
+                 <li>【特殊机制】在逃出设施后，立刻召唤一支4+1的快速反应小组，设施主管担任指挥官，其余都是九尾狐中士</li>
+                    <br><h3>当设施主管逃离设施后:</h3>
+                     <h3>设施主管成为九尾狐指挥官，从已死亡的玩家中随机4名玩家成为九尾狐中士
+                     并CLASS播报:设施快速反应小组 代号-Uniypo-17 已经进入设施，建议所有幸存人员继续执行标准疏散方案，直到快速反应小组抵达您所在的位置</h3><br>
+                <h2 class="update-title">快速反应小组-指挥官</h2>
+                <p class="update-date">由逃离设施的设施主管扮演</p>
+                    <li>【角色】九尾狐指挥官</li>
+                    <li>【血量】150 HP</li>
+                    <li>【装备】E-11-SR、对讲机、MTF指挥官钥匙卡、急救包、SCP-268 “疏忽帽”、重型防弹衣、肾上腺素、高爆手雷</li>
+                    <li>【效果】SCP-1853×1</li>
+                    <br>
+                <h2 class="update-title">快速反应小组-中士</h2>
+                <p class="update-date">由阵亡的玩家中随机抽取</p>
+                    <li>【角色】九尾狐中士</li>
+                    <li>【血量】120 HP</li>
+                    <li>【装备】E-11-SR、战术防弹衣、MTF士官钥匙卡、高爆手雷×2、急救包、肾上腺素</li>
+                    <li>【效果】SCP-207×1</li>
+
+          </ul>
+      </div>
+      <div class="update-entry">
+          <h2 class="update-title">O5-议会</h2>
+          <p class="update-date">参观设施的O5人员，基金会的重要力量</p>
+          <ul class="update-content">
+                    <li>【生成】当一局内科学家数量大于6人时生成</li>
+                    <li>【角色】科学家</li>
+                    <li>【出生点】重收容区域通往轻收容的B/A电梯</li>
+                    <li>【装备】O5卡、血包</li>
+                    <li>【血量】105HP</li>
+                    <li>【特殊机制】开局会有1~3名设施警卫在O5人员旁边，护送O5人员撤离，若O5人员死亡，则混沌票数拉满，若O5人员成功撤离则立即刷新一波九尾狐</li>
+                    <br>
+                <h3>O5死亡后，CLASS播报:注意！O5成员意外死亡 ！注意！O5成员意外死亡！（断句）建议所有幸存人员继续执行标准疏散方案，直到MTF小队抵达您所在的位置</h3><br>
+                <h2 class="update-title">O5人员-近卫</h2>
+                <p class="update-date">护送O5人员撤离</p>
+                    <li>【生成】当生成O5人员时，设施警卫数量大于4，有1名设施警卫在O5人员身边，则警卫有5人则2名在O5人员旁边，有8名则是3人，到达上限</li>
+                    <li>【出生点】跟随O5人员</li>
+                    <li>【血量】110HP</li>
+                    <li>【装备】战术甲、MP7、闪光弹、对讲机、高爆手雷、急救包</li>
+                    <li>【作用】护送O5人员撤离</li>
+            </ul>
+        <div class="update-entry">
+          <h2 class="update-title">设施警卫清收容区域刷新点</h2>
+          <p class="update-date">与SCP-181争夺武器库资源</p>
+          <ul class="update-content">
+              <li>【生成】保安人数>2人</li>
+              <li>【角色】设施警卫</li>
+              <li>【出生点】与在清收容的科学家出生点重合</li>
+              <li>【血量】100HP</li>
+              <li>【装备】轻型防弹衣、对讲机、急救包、设施警卫钥匙卡</li>
+              <li>【作用】与SCP-181争夺武器库的资源</li>
+          </ul>
+        </div>
+        <div class="update-entry">
+            <h2 class="update-title">SCP-550 "食尸鬼"</h2>
+            <p class="update-date"><a href="https://scp-wiki-cn.wikidot.com/scp-550">S.C.P官方文档</a></p>
+            <ul class="update-content">
+                <li>【生成】在刷新第一批增援时概率刷新</li>
+                <li>【角色】教程角色</li>
+                <li>【血量】400HP</li>
+                <li>【装备】维克托、SCP-500×2、战术防弹衣、MTF列兵卡</li>
+            </ul>
+        </div>
+      <div class="update-entry">
+          <h2 class="update-title">服务器插件整合包</h2>
+          <p class="update-date"></p>
+          <ul class="update-content">
+              <li>等级插件</li>
+              <li>系统核弹</li>
+              <li>保安下班</li>
+              <li>无限子弹</li>
+              <li>可乐无伤</li>
+              <li>无限体力</li>
+              <li>阴间刷新时间显示 </li>
+              <li>SCP-330上限为6颗糖</li>
+          </ul>
+      </div>
+
+
+
+  </div>
+  </div>
+  <script>
+  </script>
+
+</body>
+</html>

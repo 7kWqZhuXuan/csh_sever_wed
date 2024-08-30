@@ -1,0 +1,18 @@
+/* 个人介绍模块样式 */
+/* What Can I Say? Mamba Out! */
+#intro-module {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  /* 个人介绍样式 */
+  .intro {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }

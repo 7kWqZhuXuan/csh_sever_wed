@@ -1,0 +1,164 @@
+ 
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>更新日志</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            position: relative; /* 为固定定位的按钮设置相对定位的参照物 */
+            min-height: 100vh; /* 设置最小高度，确保内容足够长时按钮仍然在视窗内 */
+        }
+        .update-log {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .update-entry {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .update-title {
+            font-size: 24px;
+            color: #333;
+        }
+        .update-date {
+            font-size: 18px;
+            color: #666;
+        }
+        .update-content {
+            font-size: 16px;
+            color: #333;
+        }
+        .back-to-top {
+            position: fixed; /* 固定按钮位置 */
+            bottom: 20px; /* 距离底部20px */
+            right: 20px; /* 距离右边20px */
+            padding: 10px 15px; /* 内边距 */
+            background-color: #007bff; /* 背景颜色 */
+            color: white; /* 文字颜色 */
+            border: none; /* 无边框 */
+            border-radius: 5px; /* 圆角边框 */
+            cursor: pointer; /* 鼠标样式 */
+            display: none; /* 默认不显示 */
+        }
+        /* 当滚动到一定位置时显示按钮 */
+        body:hover .back-to-top {
+            display: block;
+        
+        }
+        .btn {
+            position: fixed; /* 固定按钮位置 */
+            bottom: 20px; /* 距离底部20px */
+            right: 20px; /* 距离右边20px */
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <div class="update-log">
+        <h1>更新日志</h1>
+        <p>这里记录了我们的服务器的重要更新。</p>
+        
+        <div class="update-entry">
+            <h2 class="update-title">版本 v1.2.1</h2>
+            <p class="update-date">2024年7月13日</p>
+            <ul class="update-content">
+                <li>木叶村社区服务器与城市化社区服务器合并</li>
+                <li>新增 SCP-550 </li>
+                <li>新增 阴间显示</li>
+                <li>新增 系统核 </li>
+            </ul>
+        </div>
+        <div class="update-entry">
+            <h2 class="update-title">版本 v1.2.2</h2>
+            <p class="update-date">2024年7月18日</p>
+            <ul class="update-content">
+                <li>更换新的等级插件</li>
+                <li>新增 SCP-181</li>
+                <li>新增 保安下班</li>
+            </ul>
+        </div>
+        <div class="update-entry">
+            <h2 class="update-title">版本 v1.2.7</h2>
+            <p class="update-date">2024年7月27日</p>
+            <ul class="update-content">
+                <li>新增 娱乐插件</li>
+                <li>修复了保安无法下班的BUG</li>
+                <li>修复了阴间显示的BUG</li>
+            </ul>
+        </div>
+        <div class="update-entry">
+            <h2 class="update-title">版本 v1.3.0</h2>
+            <p class="update-date">2024年7月30日</p>
+            <ul class="update-content">
+                <li>服务器更名为城市化社区服务器</li>
+            </ul>
+        </div>
+        <div class="update-entry">
+            <h2 class="update-title">版本 v1.3.2</h2>
+            <p class="update-date">2024年8月3日</p>
+            <ul class="update-content">
+                <li>削弱 SCP-181</li>
+                <li>修复 SCP-550的刷新率低的BUG </li>
+                <li>更换 新的阴间显示</li>
+            </ul>
+        </div>
+        <div class="update-entry">
+            <h2 class="update-title">版本 v1.3.2</h2>
+            <p class="update-date">2024年8月4日</p>
+            <ul class="update-content">
+                <li>服务器被DDOS攻击瘫痪</li>
+            </ul>
+        </div>
+        <div class="update-entry">
+            <h2 class="update-title">版本 v1.3.3</h2>
+            <p class="update-date">2024年8月5日</p>
+            <ul class="update-content">
+                <li>修复了保安无法下班的BUG</li>
+                <li>削弱 SCP-181</li>
+                <li>修复 SCP-550的不刷新BUG</li>
+            </ul>
+        </div>
+        <div class="update-entry">
+            <h2 class="update-title">版本 v1.3.6</h2>
+            <p class="update-date">2024年8月8日</p>
+            <ul class="update-content">
+                <li>更新了系统核弹</li>
+                <li>新增 SCP-600 [测试服]</li>
+                <li>新增 SCP-999 [测试服]</li>
+                <li>更换新的等级插件</li>
+            </ul>
+        </div>
+        <div class="update-entry">
+            <h2 class="update-title">版本 v1.4.5</h2>
+            <p class="update-date">2024年8月22日</p>
+            <ul class="update-content">
+                <li>城市化服务器与Shadow服务器和小天堂服务器联合</li>
+                <li>更换新的等级插件</li>
+                <li>更换新的阴间显示</li>
+                <li>更换了新的清理系统</li>
+                <li>新增了OMEGA核弹系统</li>
+                <li>新增了阴间显示项</li>
+                <li>新增了实时查看TPS</li>
+            </ul>
+        </div>
+
+
+
+    </div>
+    <a class="btn" href="index.html">回到主页</a>
+</body>
+</html>
+ 
